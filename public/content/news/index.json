@@ -1,0 +1,45 @@
+[
+    {
+        "file": "2026_01_01_coralia.md",
+        "title": "Sydänsairaalan ratkaisut ovat nyt Coralia",
+        "date": "2026-01-01",
+        "type": "announcement"
+    },
+    {
+        "file": "2026_01_01_coralia.md",
+        "title": "Kardio on nyt Coralia Laaturekisteri",
+        "date": "2026-01-02",
+        "type": "announcement"
+    },
+    {
+        "file": "2026_01_01_coralia.md",
+        "title": "Salikardio on nyt Salitoiminnan ohjaus",
+        "date": "2026-01-05",
+        "type": "announcement"
+    },
+    {
+        "file": "2026_01_01_coralia.md",
+        "title": "Cinia toimii Coralian palveluntuottajana",
+        "date": "2026-01-03",
+        "type": "announcement"
+    },
+    {
+        "file": "2026_01_01_coralia.md",
+        "title": "Sydänsairaala laajentaa yhteistyötään Coralian kanssa",
+        "date": "2026-01-07",
+        "type": "announcement"
+    },
+
+    {
+        "file": "2026_03_15_new_services.md",
+        "title": "Uudet palvelut sydänsairaalassa",
+        "date": "2026-03-15",
+        "type": "announcement"
+    },
+    {
+        "file": "2026_04_10_health_tips.md",
+        "title": "Terveysvinkit sydämen hyvinvointiin",
+        "date": "2026-04-10",
+        "type": "article"
+    }
+]

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tietoa meistä - Coralia</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <coralia-header active="about"></coralia-header>
+    <main>
+        <content-container>
+
+
+            <div class="columns">
+
+                <div class="col lg">
+
+                    <markdown-content src="content/coralia-about.md"></markdown-content>
+
+                    <markdown-content src="content/sydansairaala-about.md">
+                        <img src="imgs/sydansairaala_logo.png" alt="Sydänsairaala Oy logo" class="img-float right"
+                            style="margin-top: 5rem">
+                    </markdown-content>
+
+                    <markdown-content src="content/cinia-about.md"></markdown-content>
+
+                </div>
+
+                <div class="col sm">
+                    <h3>Yhteystiedot</h3>
+
+                    <p>
+                        <b>Coralia</b><br />
+                        c/o Tampereen Sydänsairaala<br />
+                        Elämänaukio 1<br />
+                        33520 Tampere
+                    </p>
+
+                    <p>puh. 03 311 716</p>
+
+
+                    
+                </div>
+            </div>
+        </content-container>
+    </main>
+    <coralia-footer></coralia-footer>
+</body>
+
+<script type="module" src="components.js"></script>
+
+</html>
