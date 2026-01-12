@@ -40,7 +40,7 @@ header {
 </style>
 <header>
     <div class="cinia-container">
-        <a href="index2.html"><img src="imgs/coralia_red_black.png" alt="Coralia Logo" class="coralia-logo"></a>
+        <a href="index2.html"><img src="imgs/Coralia_red_black.png" alt="Coralia Logo" class="coralia-logo"></a>
         <nav>
         
                 <a href="coralia2.html" class="#home#">Coralia Lyhyesti</a>

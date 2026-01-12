@@ -35,7 +35,7 @@ footer.main-footer > div.footer-content {
 
     <div class="cinia-container footer-content flexrow fullwidth spacebetween" style="align-items: flex-start;">
         <div class="logo-section">
-            <img src="imgs/coralia_red_black.png" alt="Coralia Logo" class="coralia-logo-footer">
+            <img src="imgs/Coralia_red_black.png" alt="Coralia Logo" class="coralia-logo-footer">
         </div>
         <div>
             <dl>
