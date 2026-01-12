@@ -4,4 +4,4 @@ Curabitur rutrum purus ac enim finibus, hendrerit accumsan tellus ultrices. Nunc
 
 Aliquam vulputate laoreet massa vel euismod. Sed sit amet metus a nulla varius sagittis sit amet a enim. Donec id auctor augue, sed blandit lorem. Vestibulum placerat sem dolor, at congue enim egestas vestibulum. Duis eleifend mauris metus, nec ornare nulla mattis a. Ut eget lacus non erat ultricies rutrum id id tellus. Nunc sodales eu eros in elementum. Donec id arcu id lorem porta suscipit. Pellentesque faucibus rhoncus laoreet. Vestibulum placerat auctor varius.
 
-[www.cinia.fi](https://www.cinia.fi)
+<a href="https://www.cinia.fi" target="_blank">www.cinia.fi</a>

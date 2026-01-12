@@ -5,7 +5,7 @@ template.innerHTML = `
 <slot></slot>
 `;
 
-class Markdown extends HTMLElement {
+class MarkdownContent extends HTMLElement {
 
     shadow = null;
 
@@ -13,6 +13,13 @@ class Markdown extends HTMLElement {
         super();
         this.shadow = this.attachShadow({ mode: 'open' });
         const mdfile = this.getAttribute('src');
+        const styleContent = this.getAttribute('stylecontent');
+        if (styleContent) {
+            const style = document.createElement('style');
+            style.textContent = styleContent;
+            this.shadow.appendChild(style);
+        }
+
 
         if (mdfile) {
             try {
@@ -21,7 +28,7 @@ class Markdown extends HTMLElement {
                     .then(markdown => {
                         this.shadow.appendChild(template.content.cloneNode(true));
                         this.shadow.appendChild(document.createRange().createContextualFragment(marked.parse(markdown)));
-                        
+
                     });
 
             } catch (error) {
@@ -32,4 +39,4 @@ class Markdown extends HTMLElement {
 
     }
 }
-customElements.define('markdown-content', Markdown);
+customElements.define('markdown-content', MarkdownContent);

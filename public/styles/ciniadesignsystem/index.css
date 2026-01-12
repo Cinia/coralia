@@ -1,0 +1,60 @@
+@import url("./reset.css");
+@import url("./variables.css");
+
+/** BASE TYPOGRAPHY STYLES **/
+@import url("./typography.css");
+
+
+
+/** GLOBAL STYLES FOR MULTIPLE COMPONENTS AND ELEMENTS **/
+@import url("./margins.css");
+@import url("./colors.css");
+
+/** BASE COMPONENTS **/
+@import url("./lists.css");
+@import url("./button.css");
+
+/* LAYOUTS */
+@import url("./flexrow.css");
+@import url("./container.css");
+@import url("./card.css");
+
+@import url("./navigation.css");
+
+@import url("./hero.css");
+
+/**
+ * Default body styles
+ */
+
+body {
+    font-family: var(--cinia-typography-font-family-body);
+    font-size: var(--cinia-typography-font-size-base);
+    line-height: var(--cinia-typography-line-height-base);
+    background-color: var(--cinia-color-white);
+    color: var(--cinia-color-black);
+
+    &[data-theme="dark"] {
+        background-color: var(--cinia-color-black);
+        color: var(--cinia-color-white);
+    }
+
+    &.paddings {
+        padding: var(--cinia-layout-gap);
+    }
+}
+
+/**
+ *  Debugging helpers 
+ */
+*.debug-y {
+    outline: solid 1px yellow !important;
+}
+
+*.debug-r {
+    border: solid 1px red !important;
+}
+
+/*************************************************************************************
+ *  Layout classes
+ */

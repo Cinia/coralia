@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/** HEADERS **/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--cinia-typography-font-family-headings);
+    font-weight: 700;
+
+    &.nogaps {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+h1 {
+    font-size: var(--cinia-typography-h1-fs);
+    margin-top: var(--cinia-typography-h1-mt);
+    margin-bottom: var(--cinia-typography-h1-mb);
+    font-weight: var(--cinia-typography-h1-fw);
+    color: var(--cinia-typography-h1-color);
+}
+
+h2 {
+    font-size: var(--cinia-typography-h2-fs);
+    margin-top: var(--cinia-typography-h2-mt);
+    margin-bottom: var(--cinia-typography-h2-mb);
+    font-weight: var(--cinia-typography-h2-fw);
+    color: var(--cinia-typography-h2-color);
+}
+
+h3 {
+    font-size: var(--cinia-typography-h3-fs);
+    margin-top: var(--cinia-typography-h3-mt);
+    margin-bottom: var(--cinia-typography-h3-mb);
+    font-weight: var(--cinia-typography-h3-fw);
+    color: var(--cinia-typography-h3-color);
+}
+
+h4 {
+    font-size: var(--cinia-typography-h4-fs);
+    margin-top: var(--cinia-typography-h4-mt);
+    margin-bottom: var(--cinia-typography-h4-mb);
+    font-weight: var(--cinia-typography-h4-fw);
+    color: var(--cinia-typography-h4-color);
+}
+
+h5 {
+    font-size: var(--cinia-typography-h5-fs);
+    margin-top: var(--cinia-typography-h5-mt);
+    margin-bottom: var(--cinia-typography-h5-mb);
+    font-weight: var(--cinia-typography-h5-fw);
+    color: var(--cinia-typography-h5-color);
+}
+
+h6 {
+    font-size: var(--cinia-typography-h6-fs);
+    margin-top: var(--cinia-typography-h6-mt);
+    margin-bottom: var(--cinia-typography-h6-mb);
+    font-weight: var(--cinia-typography-h6-fw);
+    color: var(--cinia-typography-h6-color);
+}
+
+/** PARAGRAPHS **/
+
+p,
+a,
+li,
+label {
+    font-family: var(--cinia-typography-font-family-body);
+    font-weight: 400;
+    font-size: var(--cinia-typography-font-size-base);
+    line-height: var(--cinia-typography-line-height-base);
+
+    &.nogaps {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/** Paragraph spacing **/
+p {
+    font-size: var(--cinia-typography-p-fs);
+    font-weight: var(--cinia-typography-p-fw);
+    color: var(--cinia-typography-p-color);
+    margin-bottom: var(--cinia-typography-p-mb);
+    margin-top: var(--cinia-typography-p-mt);
+}
+
+a {
+    text-decoration: var(--cinia-typography-link-decoration);
+    color: var(--cinia-typography-link-color);
+
+    &:hover {
+        text-decoration: var(--cinia-typography-link-hover-decoration);
+        color: var(--cinia-typography-link-hover-color);
+    }
+}
+
+/** Monospaced text elements **/
+code,
+pre {
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 0;
+}

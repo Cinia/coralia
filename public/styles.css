@@ -62,7 +62,7 @@ main {
     }
 }
 
-div.columns {
+div.columns, section.columns {
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -104,7 +104,7 @@ div.columns {
     }
 }
 
-div.row {
+div.row, section.row{
     display: flex;
     flex-direction: row;
 

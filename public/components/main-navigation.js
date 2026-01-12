@@ -31,15 +31,25 @@ nav {
 
     &.white {
         
-     a {
-        color: var(--text-color-on-primary);
-        
+        a {
+            color: var(--text-color-on-primary);
+        }   
 
         &:hover {
             border-bottom: dashed 1px var(--text-color-on-primary);
             
         }
-     } 
+    }
+
+    &.alt {
+        a {
+            text-transform: none;
+            letter-spacing: normal;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+    } 
 }
 </style>
 <nav></nav>
@@ -51,7 +61,15 @@ const navigationLinks = [
     { id: 'references', label: 'Referenssit', href: 'references.html' },
     { id: 'news', label: 'Julkaisut', href: 'news.html' },
     { id: 'about', label: 'Coralia', href: 'about.html' }
-]
+];
+
+const navigationLinksAlt = [
+    { id: 'coralia', label: 'Coralia Lyhyesti', href: 'services.html' },
+    { id: 'solutions', label: 'Ratkaisut', href: 'references.html' },
+    { id: 'benefit', label: 'Hyödyt & Vaikuttavuus', href: 'news.html' },
+    { id: 'customerexp', label: 'Asiakaskokemus', href: 'about.html' }
+];
+
 
 class MainNavigation extends HTMLElement {
     constructor() {
@@ -60,6 +78,7 @@ class MainNavigation extends HTMLElement {
 
         const active = this.getAttribute("active") || null;
         const white = this.getAttribute("white") !== null;
+        const alt = this.getAttribute("alt") !== null;
 
         const temp = navTemplate.content.cloneNode(true);
 
@@ -67,7 +86,12 @@ class MainNavigation extends HTMLElement {
         if (white && navEl) {
             navEl.classList.add("white");
         }
-        navigationLinks.forEach(link => {
+        if (alt && navEl) {
+            console.log("ALT?", alt);
+            navEl.classList.add("alt");
+        }
+        const linksToUse = alt ? navigationLinksAlt : navigationLinks;
+        linksToUse.forEach(link => {
             const aEl = document.createElement('a');
             aEl.id = `link-${link.id}`;
             aEl.href = link.href;

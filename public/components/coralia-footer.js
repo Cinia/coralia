@@ -104,6 +104,9 @@ footerTemplate.innerHTML = `
                 <li><a href="privacy.html#cookies">Evästeet</a></li>
                 <li><a href="privacy.html#data">Henkilötiedot</a></li>
                 <li><a href="accessibility.html">Saavutettavuus</a></li>
+
+                <li class="header"><a href="index.html">Versio 1</a></li>
+                <li><a href="index2.html">Versio 2</a></li>
             </ul>
         </div>
 

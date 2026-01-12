@@ -1,0 +1,50 @@
+cinia-container,
+.cinia-container,
+.container {
+    display: block;
+    width: 100%;
+    max-width: var(--cinia-layout-breakpoint-xl);
+    min-width: var(--cinia-layout-breakpoint-xs);
+    margin: 0 auto;
+    padding: var(--cinia-container-padding);
+
+    &.sh-no {
+        box-shadow: none;
+    }
+
+    &.sh-xs {
+        box-shadow: var(--cinia-box-shadow-xs);
+    }
+
+    &.sh-sm {
+        box-shadow: var(--cinia-box-shadow-sm);
+    }
+
+    &.sh-md {
+        box-shadow: var(--cinia-box-shadow-md);
+    }
+
+    &.sh-lg {
+        box-shadow: var(--cinia-box-shadow-lg);
+    }
+
+    &.sh-xl {
+        box-shadow: var(--cinia-box-shadow-xl);
+    }
+
+    &.p1 {
+        padding: calc(var(--cinia-layout-gap) * 1);
+    }
+
+    &.p2 {
+        padding: calc(var(--cinia-layout-gap) * 2);
+    }
+
+    &.separator-top {
+        border-top: var(--cinia-container-separator-width) var(--cinia-container-separator-style)
+            var(--cinia-container-separator-color);
+
+        padding-top: calc(var(--cinia-layout-gap) * 1);
+        margin-top: calc(var(--cinia-layout-gap) * 2);
+    }
+}

@@ -1,0 +1,121 @@
+div.cinia-card {
+    display: block;
+    background-color: var(--cinia-card-background-color);
+    padding: 0;
+    border-radius: var(--cinia-card-border-radius);
+    box-shadow: var(--cinia-card-box-shadow);
+
+    &.sh-no {
+        box-shadow: none;
+    }
+
+    &.sh-xs {
+        box-shadow: var(--cinia-box-shadow-xs);
+    }
+
+    &.sh-sm {
+        box-shadow: var(--cinia-box-shadow-sm);
+    }
+
+    &.sh-md {
+        box-shadow: var(--cinia-box-shadow-md);
+    }
+
+    &.sh-lg {
+        box-shadow: var(--cinia-box-shadow-lg);
+    }
+
+    &.sh-xl {
+        box-shadow: var(--cinia-box-shadow-xl);
+    }
+
+    &.p0 {
+        padding: 0;
+    }
+
+    &.p1 {
+        padding: calc(var(--cinia-layout-gap) * 0.5);
+    }
+
+    &.p2 {
+        padding: calc(var(--cinia-layout-gap) * 1);
+    }
+
+    &.p3 {
+        padding: calc(var(--cinia-layout-gap) * 1.5);
+    }
+
+    &.p4 {
+        padding: calc(var(--cinia-layout-gap) * 2);
+    }
+    
+    &.p5 {
+        padding: calc(var(--cinia-layout-gap) * 2.5);
+    }
+
+    &.bg-dark {
+        background-color: var(--cinia-card-bg-dark);
+    }
+
+    &.bg-light {
+        background-color: var(--cinia-card-bg-light);
+    }
+
+    &.bg-tp {
+        background-color: transparent;
+    }
+
+    &.bg-primary {
+        background-color: var(--cinia-color-primary);
+        color: var(--cinia-color-primary-inverse);
+    }
+
+    &.bg-secondary {
+        background-color: var(--cinia-color-secondary);
+        color: var(--cinia-color-secondary-inverse);
+    }
+
+    & > header {
+        position: relative;
+        margin-bottom: var(--cinia-layout-gap);
+        border-bottom: var(--cinia-border-width) solid var(--cinia-color-border);
+
+        /* display: flex; */
+        /* flex-direction: row; */
+        /* align-items: center; */
+        /* justify-content: space-between; */
+
+        .title {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .subtitle {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        & > div.actions {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            &.left {
+                left: 0;
+                right: auto;
+            }
+        }
+
+        &.bg-primary {
+            background-color: var(--cinia-color-primary);
+            color: var(--cinia-color-primary-inverse);
+            h1 {
+                color: var(--cinia-color-primary-inverse);
+            }
+        }
+    }
+}

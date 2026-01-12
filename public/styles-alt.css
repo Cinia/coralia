@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("./styles/ciniadesignsystem/index.css");
+
+:root {
+    --cinia-color-1: #dc1136;
+    --cinia-color-secondary: #204678;
+    --cinia-color-secondary-inverse: #ffffff;
+    /* --pico-primary-background: pink; */
+    /* --pico-secondary: #4e6c93; */
+
+    --cinia-typography-font-family-body: "Jost", Arial, sans-serif;
+    --cinia-typography-font-family-headings: "Jost", Arial, sans-serif;
+
+    --cinia-typography-h1-fs: 3rem;
+    --cinia-typography-h1-color: var(--cinia-color-secondary);
+    
+}
+
+body {
+    &.front-page {
+        /* background: var(--primary-color); */
+        /* color: var(--text-color-on-primary); */
+    }
+}
+
+
+
+main {
+
+    h1 {
+        color: var(--cinia-color-5);
+    }
+}

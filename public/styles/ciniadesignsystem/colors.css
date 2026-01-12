@@ -1,0 +1,29 @@
+
+/*************************************************************************************
+  * Color utilities
+  */
+div,
+span,
+button {
+    &.primary {
+        background-color: var(--cinia-color-primary);
+        color: var(--cinia-color-primary-inverse);
+
+        &.outline {
+            background-color: transparent;
+            color: var(--cinia-color-primary);
+            border: var(--cinia-border-width) solid var(--cinia-color-primary);
+        }
+    }
+
+    &.secondary {
+        background-color: var(--cinia-color-secondary);
+        color: var(--cinia-color-primary-inverse);
+
+        &.outline {
+            background-color: transparent;
+            color: var(--cinia-color-primary);
+            border: var(--cinia-border-width) solid var(--cinia-color-primary);
+        }
+    }
+}

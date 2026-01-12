@@ -1,0 +1,30 @@
+/** UL lists **/
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/** OL lists **/
+ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+/** DL lists **/
+dl {
+    padding-left: var(--cinia-layout-gap);
+
+    dt {
+        font-family: var(--cinia-typography-font-family-headings);
+        font-weight: 600;
+        margin-top: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-sm));
+    }
+
+    dd {
+        margin-left: calc(var(--cinia-layout-gap) * 2);
+
+        &:last-child {
+            margin-bottom: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-sm));
+        }
+    }
+}

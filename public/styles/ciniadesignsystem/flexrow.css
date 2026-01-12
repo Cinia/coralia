@@ -1,0 +1,41 @@
+
+/*************************************************************************************
+ *  Flex Row
+ */
+
+div.flexrow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--cinia-layout-gap);
+
+    &.nogap {
+        gap: 0;
+    }
+
+    &.fullwidth {
+        width: 100%;
+
+        &.fill > * {
+            flex: 1 1 auto;
+        }
+    }
+
+    &.wrap {
+        flex-wrap: wrap;
+    }
+
+    &.center {
+        justify-content: center;
+    }
+
+    &.spacebetween {
+        justify-content: space-between;
+    }
+
+    &.spacearound {
+        justify-content: space-around;
+    }
+}

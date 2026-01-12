@@ -1,0 +1,183 @@
+/*************************************************************************************
+ *  Margin classes
+ */
+
+div,
+span,
+button,
+label,
+code,
+pre,
+p,
+a,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /** Margin Bottom Utilities **/
+    &.mb,
+    &.mb-md {
+        margin-bottom: var(--cinia-layout-gap);
+    }
+
+    &.mb-0 {
+        margin-bottom: 0;
+    }
+
+    &.mb-xs {
+        margin-bottom: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-xs));
+    }
+
+    &.mb-sm {
+        margin-bottom: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-sm));
+    }
+
+    &.mb-lg {
+        margin-bottom: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-lg));
+    }
+
+    &.mb-xl {
+        margin-bottom: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-xl));
+    }
+
+    &.mb-xxl {
+        margin-bottom: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-xxl));
+    }
+
+
+    /** Margin Top **/
+    &.mt {
+        margin-top: var(--cinia-layout-gap);
+    }
+
+    &.mt-0 {
+        margin-top: 0;
+    }
+
+    &.mt-xs {
+        margin-top: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-xs));
+    }
+
+    &.mt-sm {
+        margin-top: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-sm));
+    }
+
+    &.mt-lg {
+        margin-top: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-lg));
+    }
+
+    &.mt-xl {
+        margin-top: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-xl));
+    }
+
+    &.mt-xxl {
+        margin-top: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-xxl));
+    }
+
+
+    /** Margin Left **/
+
+    &.ml {
+        margin-left: var(--cinia-layout-gap);
+    }
+
+    &.ml-0 {
+        margin-left: 0;
+    }
+
+    &.ml-xs {
+        margin-left: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-xs));
+    }
+
+    &.ml-xs {
+        margin-left: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-xs));
+    }
+
+    &.ml-sm {
+        margin-left: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-sm));
+    }
+
+    &.ml-lg {
+        margin-left: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-lg));
+    }
+
+    &.ml-xl {
+        margin-left: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-xl));
+    }
+
+    &.ml-xxl {
+        margin-left: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-xxl));
+    }
+
+    /** Margin Right **/
+
+    &.mr {
+        margin-right: var(--cinia-layout-gap);
+    }
+
+    &.mr-0 {
+        margin-right: 0;
+    }
+
+    &.mr-xs {
+        margin-right: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-xs));
+    }
+
+    &.mr-sm {
+        margin-right: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-sm));
+    }
+
+    &.mr-lg {
+        margin-right: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-lg));
+    }
+
+    &.mr-xl {
+        margin-right: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-xl));
+    }
+
+    &.mr-xxl {
+        margin-right: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-xxl));
+    }
+
+    /** vertical margin **/
+    &.my, &.my-md {
+        margin-top: var(--cinia-layout-gap);
+        margin-bottom: var(--cinia-layout-gap);
+    }
+
+    &.my-0 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &.my-xs {
+        margin-top: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-xs));
+        margin-bottom: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-xs));
+    }
+
+    &.my-sm {
+        margin-top: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-sm));
+        margin-bottom: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-sm));
+    }
+
+    &.my-lg {
+        margin-top: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-lg));
+        margin-bottom: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-lg));
+    }
+
+    &.my-xl {
+        margin-top: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-xl));
+        margin-bottom: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-xl));
+    }
+
+    &.my-xxl {
+        margin-top: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-xxl));
+        margin-bottom: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-xxl));
+    }
+
+
+}

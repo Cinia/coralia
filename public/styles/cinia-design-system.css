@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /***************************
+     * Variables for colors
+     */
+
+    --cinia-color-white: #f5f5f5;
+    --cinia-color-black: #0a0a0a;
+
+    --cinia-color-1: #0d2440;
+    --cinia-color-1-inverse: #f5f5f5;
+    --cinia-color-2: #f5f5f5;
+    --cinia-color-2-inverse: #222222;
+    --cinia-color-3: #eaebe6;
+    --cinia-color-3-inverse: #222222;
+    --cinia-color-4: #4e6c93;
+    --cinia-color-4-inverse: #ffffff;
+    --cinia-color-5: #ce2d4f;
+    --cinia-color-5-inverse: #ffffff;
+
+    --cinia-color-6: #5b8c5a;
+    --cinia-color-6-inverse: #ffffff;
+    --cinia-color-7: #aba9c3;
+    --cinia-color-7-inverse: #ffffff;
+    --cinia-color-8: #7a7265;
+    --cinia-color-8-inverse: #ffffff;
+    --cinia-color-9: #f49fbc;
+    --cinia-color-9-inverse: #ffffff;
+
+    /** Primary Color **/
+    --cinia-color-primary: var(--cinia-color-1);
+    --cinia-color-primary-inverse: var(--cinia-color-1-inverse);
+
+    /** Secondary Color **/
+    --cinia-color-secondary: var(--cinia-color-4);
+    --cinia-color-primary-inverse: var(--cinia-color-2);
+
+    /** Success Color **/
+    --cinia-color-success: #28a745;
+    --cinia-color-success-inverse: var(--cinia-color-2);
+
+    /** Warning Color **/
+    --cinia-color-warning: #ffc107;
+    --cinia-color-warning-inverse: var(--cinia-color-1);
+
+    /** Error Color **/
+    --cinia-color-error: var(--cinia-color-5);
+    --cinia-color-error-inverse: var(--cinia-color-5-inverse);
+
+    /** Info Color **/
+    --cinia-color-info: #17a2b8;
+    --cinia-color-info-inverse: var(--cinia-color-2);
+
+    /* Variables for layout */
+
+    --cinia-layout-breakpoint-xs: 480px;
+    --cinia-layout-breakpoint-sm: 768px;
+    --cinia-layout-breakpoint-md: 992px;
+    --cinia-layout-breakpoint-lg: 1200px;
+    --cinia-layout-breakpoint-xl: 1400px;
+
+    --cinia-layout-gap: 8px;
+
+    --cinia-layout-multip-xs: 0.5;
+    --cinia-layout-multip-sm: 0.75;
+    --cinia-layout-multip-md: 1;
+    --cinia-layout-multip-lg: 1.25;
+    --cinia-layout-multip-xl: 1.5;
+
+    --cinia-border-width: 2px;
+    --cinia-border-radius: 8px;
+
+    /* Variables for typography */
+
+    --cinia-typography-font-family-body: "Archivo", Arial, sans-serif;
+    --cinia-typography-font-family-headings: "Quantico", Arial, sans-serif;
+
+    --cinia-typography-font-size-base: 16px;
+    --cinia-typography-line-height-base: 1.5;
+}
+
+/*************************************************************************************
+ *  Typography styles
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--cinia-typography-font-family-headings);
+    font-weight: 700;
+
+    &.nogaps {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+p,
+a,
+li,
+label,
+span,
+div {
+    font-family: var(--cinia-typography-font-family-body);
+    font-weight: 400;
+    font-size: var(--cinia-typography-font-size-base);
+    line-height: var(--cinia-typography-line-height-base);
+
+    &.nogaps {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/*************************************************************************************
+ *  Layout classes
+ */
+
+.container {
+    width: 100%;
+    max-width: var(--cinia-layout-breakpoint-xl);
+    min-width: var(--cinia-layout-breakpoint-xs);
+}
+
+/*************************************************************************************
+ *  Margin classes
+ */
+
+div,
+span,
+button,
+label,
+p,
+a,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    &.mb,
+    &.mb-md {
+        margin-bottom: var(--cinia-layout-gap);
+    }
+
+    &.mb-xs {
+        margin-bottom: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-xs));
+    }
+
+    &.mb-sm {
+        margin-bottom: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-sm));
+    }
+
+    &.mb-lg {
+        margin-bottom: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-lg));
+    }
+
+    &.mb-xl {
+        margin-bottom: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-xl));
+    }
+
+    &.mb {
+        margin-bottom: var(--cinia-layout-gap);
+    }
+
+    &.mt {
+        margin-top: var(--cinia-layout-gap);
+    }
+
+    &.ml {
+        margin-left: var(--cinia-layout-gap);
+    }
+
+    &.mr {
+        margin-right: var(--cinia-layout-gap);
+    }
+}
+
+/*************************************************************************************
+ *  Flex Row
+ */
+
+div.flexrow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--cinia-layout-gap);
+
+    &.nogap {
+        gap: 0;
+    }
+
+    &.wrap {
+        flex-wrap: wrap;
+    }
+
+    &.center {
+        justify-content: center;
+    }
+
+    &.spacebetween {
+        justify-content: space-between;
+    }
+
+    & > *.flex {
+        flex: 1 1 auto;
+    }
+}
+
+/*************************************************************************************
+  * Color utilities
+  */
+div,
+span,
+button {
+    &.primary {
+        background-color: var(--cinia-color-primary);
+        color: var(--cinia-color-primary-inverse);
+
+        &.outline {
+            background-color: transparent;
+            color: var(--cinia-color-primary);
+            border: var(--cinia-border-width) solid var(--cinia-color-primary);
+        }
+    }
+
+    &.secondary {
+        background-color: var(--cinia-color-secondary);
+        color: var(--cinia-color-primary-inverse);
+
+        &.outline {
+            background-color: transparent;
+            color: var(--cinia-color-primary);
+            border: var(--cinia-border-width) solid var(--cinia-color-primary);
+        }
+    }
+}

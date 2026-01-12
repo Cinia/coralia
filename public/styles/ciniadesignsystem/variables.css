@@ -1,0 +1,166 @@
+:root {
+    /***************************
+     * Variables for colors
+     */
+
+    --cinia-color-white: #f5f5f5;
+    --cinia-color-black: #0a0a0a;
+
+    --cinia-color-1: #0d2440;
+    --cinia-color-1-inverse: #f5f5f5;
+    --cinia-color-2: #f5f5f5;
+    --cinia-color-2-inverse: #222222;
+    --cinia-color-3: #eaebe6;
+    --cinia-color-3-inverse: #222222;
+    --cinia-color-4: #2d7dd2;
+    --cinia-color-4-inverse: #ffffff;
+    --cinia-color-5: #ce2d4f;
+    --cinia-color-5-inverse: #ffffff;
+
+    --cinia-color-6: #5b8c5a;
+    --cinia-color-6-inverse: #ffffff;
+    --cinia-color-7: #f75c03;
+    --cinia-color-7-inverse: #ffffff;
+    --cinia-color-8: #7a7265;
+    --cinia-color-8-inverse: #ffffff;
+    --cinia-color-9: #f49fbc;
+    --cinia-color-9-inverse: #ffffff;
+
+    /** Primary Color **/
+    --cinia-color-primary: var(--cinia-color-1);
+    --cinia-color-primary-inverse: var(--cinia-color-1-inverse);
+
+    /** Secondary Color **/
+    --cinia-color-secondary: var(--cinia-color-4);
+    --cinia-color-primary-inverse: var(--cinia-color-2);
+
+    /** Success Color **/
+    --cinia-color-success: var(--cinia-color-6);
+    --cinia-color-success-inverse: var(--cinia-color-6-inverse);
+
+    /** Warning Color **/
+    --cinia-color-warning: var(--cinia-color-7);
+    --cinia-color-warning-inverse: var(--cinia-color-7-inverse);
+
+    /** Error Color **/
+    --cinia-color-error: var(--cinia-color-5);
+    --cinia-color-error-inverse: var(--cinia-color-5-inverse);
+
+    /** Info Color **/
+    --cinia-color-info: var(--cinia-color-secondary);
+    --cinia-color-info-inverse: var(--cinia-color-secondary-inverse);
+
+    /** Box shadows **/
+    --cinia-box-shadow-xs: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --cinia-box-shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.15);
+    --cinia-box-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.2);
+    --cinia-box-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.25);
+    --cinia-box-shadow-xl: 0 12px 36px rgba(0, 0, 0, 0.3);
+
+    --cinia-box-shadow-xs-white: 0 1px 3px rgba(255, 255, 255, 0.1);
+    --cinia-box-shadow-sm-white: 0 2px 6px rgba(255, 255, 255, 0.15);
+    --cinia-box-shadow-md-white: 0 4px 12px rgba(255, 255, 255, 0, 0.2);
+    --cinia-box-shadow-lg-white: 0 8px 24px rgba(255, 255, 255, 0.25);
+    --cinia-box-shadow-xl-white: 0 12px 36px rgba(255, 255, 255, 0.3);
+
+    /* Variables for layout */
+
+    --cinia-layout-breakpoint-xs: 480px;
+    --cinia-layout-breakpoint-sm: 768px;
+    --cinia-layout-breakpoint-md: 992px;
+    --cinia-layout-breakpoint-lg: 1200px;
+    --cinia-layout-breakpoint-xl: 1400px;
+
+    --cinia-layout-gap: 12px;
+
+    --cinia-layout-multip-xxs: 0.5;
+    --cinia-layout-multip-xs: 0.7;
+    --cinia-layout-multip-sm: 0.85;
+    --cinia-layout-multip-md: 1;
+    --cinia-layout-multip-lg: 1.25;
+    --cinia-layout-multip-xl: 1.5;
+    --cinia-layout-multip-xxl: 1.8;
+
+    --cinia-border-width: 2px;
+    --cinia-border-radius: 8px;
+    --cinia-border-color: var(--cinia-color-primary);
+
+    --cinia-card-background-color: var(--cinia-color-2);
+    --cinia-card-padding: calc(var(--cinia-layout-gap) * 2);
+    --cinia-card-border-radius: var(--cinia-border-radius);
+    --cinia-card-box-shadow: var(--cinia-box-shadow-md);
+
+    /* Variables for typography */
+
+    --cinia-typography-font-family-body: "Archivo", Arial, sans-serif;
+    --cinia-typography-font-family-headings: "Quantico", Arial, sans-serif;
+
+    --cinia-typography-font-size-base: 16px;
+    --cinia-typography-line-height-base: 1.5;
+
+    /* Heading styles */
+    --cinia-typography-h1-fs: calc(var(--cinia-typography-font-size-base) * var(--cinia-layout-multip-xxl));
+    --cinia-typography-h1-mt: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-xxl));
+    --cinia-typography-h1-mb: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-lg));
+    --cinia-typography-h1-fw: 700;
+    --cinia-typography-h1-color: var(--cinia-color-primary);
+
+    --cinia-typography-h2-fs: calc(var(--cinia-typography-font-size-base) * var(--cinia-layout-multip-xl));
+    --cinia-typography-h2-mt: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-xl));
+    --cinia-typography-h2-mb: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-md));
+    --cinia-typography-h2-fw: 700;
+    --cinia-typography-h2-color: inherit;
+
+    --cinia-typography-h3-fs: calc(var(--cinia-typography-font-size-base) * var(--cinia-layout-multip-lg));
+    --cinia-typography-h3-mt: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-lg));
+    --cinia-typography-h3-mb: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-md));
+    --cinia-typography-h3-fw: 700;
+    --cinia-typography-h3-color: inherit;
+
+    --cinia-typography-h4-fs: calc(var(--cinia-typography-font-size-base) * var(--cinia-layout-multip-md));
+    --cinia-typography-h4-mt: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-md));
+    --cinia-typography-h4-mb: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-sm));
+    --cinia-typography-h4-fw: 600;
+    --cinia-typography-h4-color: inherit;
+
+    --cinia-typography-h5-fs: calc(var(--cinia-typography-font-size-base) * var(--cinia-layout-multip-sm));
+    --cinia-typography-h5-mt: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-sm));
+    --cinia-typography-h5-mb: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-sm));
+    --cinia-typography-h5-fw: 600;
+    --cinia-typography-h5-color: inherit;
+
+    --cinia-typography-h6-fs: calc(var(--cinia-typography-font-size-base) * var(--cinia-layout-multip-sm));
+    --cinia-typography-h6-mt: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-sm));
+    --cinia-typography-h6-mb: calc(var(--cinia-layout-gap) * var(--cinia-layout-multip-sm));
+    --cinia-typography-h6-fw: 400;
+    --cinia-typography-h6-color: inherit;
+
+    /** Paragraph styles **/
+    --cinia-typography-p-fs: var(--cinia-typography-font-size-base);
+    --cinia-typography-p-fw: 400;
+    --cinia-typography-p-mb: var(--cinia-layout-gap);
+    --cinia-typography-p-mt: 0;
+    --cinia-typography-p-color: inherit;
+
+    /** Link styles **/
+    --cinia-typography-link-color: var(--cinia-color-secondary);
+    --cinia-typography-link-hover-color: var(--cinia-color-secondary);
+    --cinia-typography-link-decoration: none;
+    --cinia-typography-link-hover-decoration: underline;
+
+    /** Button styles **/
+    --cinia-button-fs: calc(var(--cinia-typography-font-size-base) * 0.9);
+    --cinia-button-fw: 700;
+    --cinia-button-border-radius: calc(var(--cinia-border-radius) * 0.5);
+    --cinia-button-border-color-default: var(--cinia-color-black);
+
+    /** Component styles **/
+
+    --cinia-container-padding: 0;
+    --cinia-container-separator-color: var(--cinia-color-primary);
+    --cinia-container-separator-width: var(--cinia-border-width);
+    --cinia-container-separator-style: solid;
+
+    --cinia-card-bg-dark: var(--cinia-color-3);
+    --cinia-card-bg-light: var(--cinia-color-2);
+}
