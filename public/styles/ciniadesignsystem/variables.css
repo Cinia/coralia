@@ -34,6 +34,10 @@
     --cinia-color-secondary: var(--cinia-color-4);
     --cinia-color-primary-inverse: var(--cinia-color-2);
 
+    /** Tertiary Color **/
+    --cinia-color-tertiary: var(--cinia-color-3);
+    --cinia-color-tertiary-inverse: var(--cinia-color-3-inverse);
+
     /** Success Color **/
     --cinia-color-success: var(--cinia-color-6);
     --cinia-color-success-inverse: var(--cinia-color-6-inverse);

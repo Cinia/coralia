@@ -1,53 +1,141 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="fi" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Referenssit - Coralia</title>
-    <link rel="stylesheet" href="styles.css">
-
+    <title>Yhteystiedot - Coralia</title>
+    <meta name="description" content="Coralia - Terveydenhuollon ammattilaisten kehittämä toiminnanohjausjärjestelmä">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-alt.css">
 </head>
 
-<body>
-    <coralia-header active="contact"></coralia-header>
-    <main>
+<body class="front-page">
 
-        <content-container>
-            <section>
-                <h1>Ota yhteyttä</h1>
+    <main-header></main-header>
+
+    <main class="cinia-container content-page">
+
+        <h1>Yhteystiedot</h1>
 
 
-                <form style="display: flex; flex-direction: column; gap: 1rem; max-width: 600px;">
+        <div class="flexrow fullwidth top gap2">
 
-                    <label for="name">Nimi:</label>
-                    <input type="text" id="name" name="name" required>
 
-                    <label for="email">Sähköposti:</label>
-                    <input type="email" id="email" name="email" required>
+            <div style="flex: 3 3 auto;">
+                <h2>Ota yhteyttä</h2>
 
-                    <label for="subject">Aihe:</label>
-                    <select id="subject" name="subject" required>
-                        <option value="" disabled selected>Valitse aihe</option>
-                        <option value="general">Yleinen kysymys</option>
-                        <option value="demo">Demo pyyntö</option>
-                        <option value="feedback">Palaute</option>
-                    </select>
 
-                    <label for="message">Viesti:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                <form>
 
-                    <button type="submit" class="action-button">Lähetä</button>
+                    <p>Sähköposti</label>
+                        <input type="email" id="email" name="email" placeholder="etunimi.sukunimi@esimerkki.fi" required
+                            class="lg" />
+
+                    <p for="phonenumber">Puhelinnumero</p>
+                    <input type="text" id="phonenumber" name="phonenumber" placeholder="+358501122334" required
+                        class="lg" />
+
+                    <p>Yhteydenoton syy</p>
+
+
+                    <input type="checkbox" name="reason-info" id="reason-info" class="as-button" required />
+                    <label for="reason-info">Lisätietoja Coraliasta</label>
+
+                    <input type="checkbox" name="reason" value="demo" id="reason-demo" class="as-button" required />
+                    <label for="reason-demo">Demon ratkaisusta</label>
+                    <input type="checkbox" name="reason" value="feedback" id="reason-feedback" class="as-button"
+                        required />
+                    <label for="reason-feedback">Palaute</label>
+
+                    <p>Avoin teksti</p>
+                    <textarea name="message" id="message" placeholder="Kirjoita viestisi tähän..."
+                        class="lg full-width"></textarea>
+
+
+                    <div class="mt-lg">
+                        <button type="submit" class="confirm lg mt">Lähetä viesti</button>
+                    </div>
+
 
                 </form>
 
 
-            </section>
-        </content-container>
+
+
+            </div>
+
+            <div style="flex: 1 1 auto;">
+                <h2>Yhteyshenkilöt</h2>
+
+                <div class="cinia-card contact-info-box">
+
+                    <img src="imgs/placeholderperson.png" alt="Mikko Myyjä">
+
+                    <h3>Mikko Myyjä </h3>
+                    <h4>Myynti</h4>
+
+                    <p class="phone">+358 50 123 4567</p>
+                    <p class="email">mikko.myyjä@corelia.fi</p>
+                </div>
+
+                <div class="cinia-card contact-info-box">
+
+                    <img src="imgs/placeholderperson.png" alt="Mikko Myyjä">
+
+                    <h3>Timo Tekniikka</h3>
+                    <h4>Tekniset asiat</h4>
+
+                    <p class="phone">+358 50 123 4567</p>
+                    <p class="email">timo.tekniikka@corelia.fi</p>
+                </div>
+
+                <div class="cinia-card contact-info-box">
+
+                    <img src="imgs/placeholderperson.png" alt="Mikko Myyjä">
+
+                    <h3>Lasse Lääkäri</h3>
+                    <h4>Lääketieteelliset asiat</h4>
+
+                    <p class="phone">+358 50 123 4567</p>
+                    <p class="email">lasse.laakari@corelia.fi</p>
+                </div>
+
+                <div class="cinia-card contact-info-box small">
+
+
+
+                    <h3>Sovellustuki</h3>
+
+
+
+                    <p class="email">sovellustuki@corelia.fi</p>
+                </div>
+
+                <div class="cinia-card contact-info-box small">
+
+
+                    <h3>Hallinnolliset- ja sopimusasiat</h3>
+
+
+
+                    <p class="email">hallinto@corelia.fi</p>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
 
     </main>
-    <coralia-footer></coralia-footer>
+
+    <main-footer></main-footer>
+
+
 </body>
+
 
 <script type="module" src="components.js"></script>
 

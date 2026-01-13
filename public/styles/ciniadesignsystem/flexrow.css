@@ -1,9 +1,13 @@
-
 /*************************************************************************************
  *  Flex Row
  */
 
-div.flexrow {
+div.flexrow,
+section.flexrow,
+article.flexrow,
+header.flexrow,
+footer.flexrow,
+main.flexrow {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -11,8 +15,46 @@ div.flexrow {
     align-items: center;
     gap: var(--cinia-layout-gap);
 
+    &.gap0,
     &.nogap {
         gap: 0;
+    }
+
+    &.start {
+        justify-content: flex-start;
+    }
+
+    &.end {
+        justify-content: flex-end;
+    }
+
+    &.top {
+        align-items: flex-start;
+    }
+
+    &.bottom {
+        align-items: flex-end;
+    }
+
+    &.vertical {
+        flex-direction: column;       
+    }
+
+
+    &.gap0_5 {
+        gap: calc(var(--cinia-layout-gap) / 2);
+    }
+
+    &.gap1 {
+        gap: var(--cinia-layout-gap);
+    }
+
+    &.gap2 {
+        gap: calc(var(--cinia-layout-gap) * 2);
+    }
+
+    &.gap3 {
+        gap: calc(var(--cinia-layout-gap) * 3);
     }
 
     &.fullwidth {
@@ -21,6 +63,10 @@ div.flexrow {
         &.fill > * {
             flex: 1 1 auto;
         }
+    }
+
+    &.fullheight {
+        height: 100%;
     }
 
     &.wrap {

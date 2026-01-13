@@ -1,0 +1,157 @@
+*.info-box {
+    padding: var(--cinia-layout-gap);
+    position: relative;
+    margin-bottom: calc(var(--cinia-layout-gap) * 1);
+    width: 100%;
+    min-height: 9rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &.center {
+        justify-content: center;
+    }
+
+    svg {
+        position: absolute;
+        width: 7rem;
+        height: 7rem;
+        left: 2rem;
+        top: 50%;
+        margin-top: calc(-3.5rem);
+
+        &.c-primary {
+            color: var(--cinia-color-primary);
+        }
+
+        &.c-secondary {
+            color: var(--cinia-color-secondary);
+        }
+
+        &.c-tertiary {
+            color: var(--cinia-color-tertiary);
+        }
+
+        &.c-white {
+            color: var(--cinia-color-white);
+        }
+
+        &.c-black {
+            color: var(--cinia-color-black);
+        }
+    }
+
+    p {
+        margin-left: 25%;
+        font-size: calc(var(--cinia-typography-font-size-base) * 2);
+        b {
+            font-size: calc(var(--cinia-typography-font-size-base) * 3);
+            color: var(--cinia-color-primary);
+            display: block;
+        }
+
+        &.noicon {
+            margin-left: 0;
+        }
+
+        &.center {
+            text-align: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    &.primary {
+        background: var(--cinia-color-primary);
+        color: var(--cinia-color-primary-inverse);
+
+        &.light-80 {
+            background: color-mix(in srgb, var(--cinia-color-primary), white 80%);
+            color: var(--cinia-color-primary);
+        }
+
+        &.light-60 {
+            background: color-mix(in srgb, var(--cinia-color-primary), white 60%);
+            color: var(--cinia-color-primary);
+        }
+
+        &.light,
+        &.light-50 {
+            background: color-mix(in srgb, var(--cinia-color-primary), white 50%);
+            color: var(--cinia-color-primary-inverse);
+        }
+
+        &.light-40 {
+            background: color-mix(in srgb, var(--cinia-color-primary), white 40%);
+            color: var(--cinia-color-primary-inverse);
+        }
+
+        &.light-20 {
+            background: color-mix(in srgb, var(--cinia-color-primary), white 20%);
+            color: var(--cinia-color-primary-inverse);
+        }
+    }
+
+    &.secondary {
+        background: var(--cinia-color-secondary);
+        color: var(--cinia-color-secondary-inverse);
+
+        &.light-80 {
+            background: color-mix(in srgb, var(--cinia-color-secondary), white 80%);
+            color: var(--cinia-color-secondary);
+        }
+
+        &.light-60 {
+            background: color-mix(in srgb, var(--cinia-color-secondary), white 60%);
+            color: var(--cinia-color-secondary);
+        }
+
+        &.light,
+        &.light-50 {
+            background: color-mix(in srgb, var(--cinia-color-secondary), white 50%);
+            color: var(--cinia-color-secondary-inverse);
+        }
+
+        &.light-40 {
+            background: color-mix(in srgb, var(--cinia-color-secondary), white 40%);
+            color: var(--cinia-color-secondary-inverse);
+        }
+
+        &.light-20 {
+            background: color-mix(in srgb, var(--cinia-color-secondary), white 20%);
+            color: var(--cinia-color-secondary-inverse);
+        }
+    }
+
+    &.tertiary {
+        background: var(--cinia-color-tertiary);
+        color: var(--cinia-color-tertiary-inverse);
+
+        &.light-80 {
+            background: color-mix(in srgb, var(--cinia-color-tertiary), white 80%);
+            color: var(--cinia-color-tertiary);
+        }
+
+        &.light-60 {
+            background: color-mix(in srgb, var(--cinia-color-tertiary), white 60%);
+            color: var(--cinia-color-tertiary);
+        }
+
+        &.light,
+        &.light-50 {
+            background: color-mix(in srgb, var(--cinia-color-tertiary), white 50%);
+            color: var(--cinia-color-tertiary-inverse);
+        }
+
+        &.light-40 {
+            background: color-mix(in srgb, var(--cinia-color-tertiary), white 40%);
+            color: var(--cinia-color-tertiary-inverse);
+        }
+
+        &.light-20 {
+            background: color-mix(in srgb, var(--cinia-color-tertiary), white 20%);
+            color: var(--cinia-color-tertiary-inverse);
+        }
+    }
+}

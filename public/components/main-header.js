@@ -6,9 +6,15 @@ template.innerHTML = `
 <style>
 
 header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--layout-header-height);
+    background-color: var(--cinia-color-white);
    
     box-shadow: 0 0.5rem 5px 2px rgba(0,0,0,0.1);
+    z-index: 10;
   
 
     & > div.cinia-container {
@@ -32,21 +38,21 @@ header {
 }
 
 
-    
-
-
-
-
 </style>
 <header>
     <div class="cinia-container">
-        <a href="index2.html"><img src="imgs/Coralia_red_black.png" alt="Coralia Logo" class="coralia-logo"></a>
+        <a href="index.html"><img src="imgs/Coralia_red_black.png" alt="Coralia Logo" class="coralia-logo"></a>
         <nav>
         
-                <a href="coralia2.html" class="#home#">Coralia Lyhyesti</a>
+                
                 <a href="solutions.html" class="#services#">Ratkaisut</a>
-                <a href="about.html" class="#about#">Hyödyt & vaikuttavuus</a>
-                <a href="contact.html" class="#contact#">Asiakaskokemus</a>
+                <a href="effectiveness.html" class="#about#">Vaikuttavuus</a>
+                <a href="integrations.html" class="#about#">Integraatiot</a>
+                <a href="videos.html" class="#about#">Videot</a>
+                <a href="security.html" class="#about#">Tietoturva</a>
+                <a href="coralia.html" class="#home#">Meistä</a>
+                <a href="contact.html" class="#about#">Yhteystiedot</a>
+                
                 
 
         </nav>

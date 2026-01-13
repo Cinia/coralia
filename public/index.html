@@ -1,72 +1,102 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="fi" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coralia</title>
-    <link rel="stylesheet" href="styles.css">
-
+    <meta name="description" content="Coralia - Terveydenhuollon ammattilaisten kehittämä toiminnanohjausjärjestelmä">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-alt.css">
 </head>
 
 <body class="front-page">
-    <img src="imgs/cardiologyheart.jpg" class="index-bg">
 
+    <main-header></main-header>
 
-    <header>
-        <content-container>
-            <div class="row spacebetween">
-                <img src="imgs/coralia_white.png" alt="Coralia logo" class="centered" style="width: 200px;">
-
-                <main-navigation white></main-navigation>
-
-                <a class="header-contact" href="contact.html">
-                    Ota yhteyttä
-                </a>
-            </div>
-        </content-container>
-    </header>
 
     <main>
-        <content-container>
 
-            <section class="columns" style="height: calc(100vh - 450px); gap: 2rem;">
 
-                <div class="col half"
-                    style="display: flex; flex-direction: column; justify-content: center; gap: 1rem; flex: 1 1 auto;">
+        <section class="cinia-hero h50">
+            <img src="imgs/hero_image_1.jpg" alt="Hero Image" class="hero-image">
+
+            <div class="cinia-container" style="height: 100%;">
+
+                <div
+                    style="position: relative; display: flex; width: 60%; height: 100%; flex-direction: column; justify-content: center; align-items: center;">
 
                     <markdown-content src="content/frontpage-hero-title.md"
-                        stylecontent="h1 { font-size: 2.3rem; text-transform: uppercase; }"></markdown-content>
+                        stylecontent="h1 { display: inline; font-size: 3rem; color: var(--cinia-color-white) } h2 { display: inline; font-size: 2.4rem; color: var(--cinia-color-white) } h3 { color: var(--cinia-color-white) }"></markdown-content>
 
 
-                    <div class="row spacearound">
-                        <a href="contact.html" class="action-button">
-                            Ota yhteyttä
+                    <div class="flexrow" style="justify-content: flex-start;">
+                        <a href="contact.html">
+                            <button class="primary xlarge">
+                                Pyydä demo
+                            </button>
+
                         </a>
-
-
-                        <a class="action-button" href="contact.html">
-                            Pyydä demo!
+                        <a href="contact.html">
+                            <button class="secondary xlarge">
+                                Ota yhteyttä
+                            </button>
                         </a>
                     </div>
 
                 </div>
+            </div>
+        </section>
 
-                <div class="col half"
-                    style="display: flex; align-items: center; justify-content: center; flex: 1 1 auto;">
-                    <!-- https://pixabay.com/illustrations/heart-care-medical-care-heart-1040248/ -->
-                    <img src="imgs/heartpulsewhite.png" alt="Cardiology themed image" class="centered"
-                        style="width: 100%; transform: skewx(-35deg) skewy(15deg);">
-                </div>
-            </section>
+        <section class="cinia-container" style="height: 40vh">
 
-        </content-container>
+            <div class="flexrow fill fullwidth nogap" style="height: 100%">
+
+                <front-page-card>
+
+                    <svg class="icon">
+                        <use href="imgs/icons/heartbeat.svg"></use>
+                    </svg>
+
+                    <h2>Koko leikkausprosessin hallinta yhdessä järjestelmässä</h2>
+
+                </front-page-card>
+
+                <front-page-card>
+
+                    <svg class="icon">
+                        <use href="imgs/icons/infocircle.svg"></use>
+                    </svg>
+
+                    <h2>10 - 20 minuutin ajansäästö per potilas</h2>
+
+                </front-page-card>
+
+                <front-page-card>
+
+                    <svg class="icon">
+                        <use href="imgs/icons/flagpause.svg"></use>
+                    </svg>
+
+                    <h2>Vähemmän keskeytyksiä työssä</h2>
+
+                </front-page-card>
+
+
+            </div>
+
+        </section>
+
+
+
+
+
 
 
 
 
     </main>
-    <coralia-footer nopulse transparent></coralia-footer>
+    <main-footer></main-footer>
 </body>
 <script type="module" src="components.js"></script>
 

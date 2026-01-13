@@ -1,11 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 
 @import url("./styles/ciniadesignsystem/index.css");
+@import url("./styles/info-box.css");
+@import url("./styles/contact-box.css");
+
+@import url("./styles/flipper.css");
 
 :root {
     --cinia-color-1: #dc1136;
     --cinia-color-secondary: #204678;
     --cinia-color-secondary-inverse: #ffffff;
+
+    --cinia-color-tertiary: #267826;
+    --cinia-color-tertiary-inverse: #ffffff;
+
     /* --pico-primary-background: pink; */
     /* --pico-secondary: #4e6c93; */
 
@@ -14,7 +22,8 @@
 
     --cinia-typography-h1-fs: 3rem;
     --cinia-typography-h1-color: var(--cinia-color-secondary);
-    
+
+    --layout-header-height: 6rem;
 }
 
 body {
@@ -24,11 +33,111 @@ body {
     }
 }
 
-
-
 main {
+    margin-top: calc(var(--layout-header-height) + var(--cinia-layout-gap) * 2);
 
-    h1 {
-        color: var(--cinia-color-5);
+    &.content-page {
+        h1 {
+            position: relative;
+            display: block;
+            /* margin-top: calc(var(--cinia-layout-gap) * 3); */
+            /* margin-bottom: calc(var(--cinia-layout-gap) * 2); */
+
+            height: 5rem;
+
+            color: var(--cinia-color-secondary);
+
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: calc(2.5rem - 2px);
+                right: 0;
+                left: 20rem;
+                height: 4px;
+                background: var(--cinia-color-secondary);
+                z-index: -1;
+            }
+        }
+    }
+
+    *.big-card {
+        flex: 1 1 auto;
+        width: calc(33% - var(--cinia-layout-gap) * 3);
+
+        box-shadow: var(--cinia-box-shadow-md);
+
+        min-height: 20rem;
+        transition: all 0.5s ease;
+
+        position: relative;
+
+        div.sidea {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: inherit;
+            filter: opacity(1);
+        }
+
+        div.sideb {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: inherit;
+            filter: opacity(0);
+
+            padding: var(--cinia-layout-gap);
+        }
+
+        &:hover {
+            div.sidea {
+                filter: opacity(0);
+            }
+
+            div.sideb {
+                filter: opacity(1);
+            }
+        }
+
+        img.bigpic,
+        & > img {
+            width: 100%;
+            height: auto;
+
+            border-top-left-radius: var(--cinia-border-radius);
+            border-top-right-radius: var(--cinia-border-radius);
+        }
+
+        h2.title,
+        & > h2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2rem;
+            padding: 0 var(--cinia-layout-gap);
+        }
+
+        div.boxes-list {
+            height: calc(100% - 2rem);
+            & > div {
+                flex: 1 1 auto;
+                width: 50%;
+                min-height: 33%;
+                max-height: 50%;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                font-size: calc(var(--cinia-typography-font-size-base) * var(--cinia-layout-multip-md));
+                padding: var(--cinia-layout-gap);
+            }
+        }
     }
 }

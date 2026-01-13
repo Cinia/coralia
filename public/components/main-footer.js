@@ -6,18 +6,16 @@ const rawTemplate = `
 
 footer.main-footer {
     height: 10rem;
-}
+    margin-top: calc(var(--cinia-layout-gap) * 4);
 
-footer.main-footer > div.footer-content {
+    align-items: flex-start;
 
-    height: 100%;
-
+    
     & > div {
         min-width: 20%;
     }
 
     div.logo-section {
-
         height: 100%;
         display: flex;
         align-items: center;
@@ -30,10 +28,11 @@ footer.main-footer > div.footer-content {
     }
 }
 
-</style>
-<footer class="main-footer">
 
-    <div class="cinia-container footer-content flexrow fullwidth spacebetween" style="align-items: flex-start;">
+</style>
+<footer class="main-footer cinia-container flexrow fullwidth fill spacebetween">
+
+    
         <div class="logo-section">
             <img src="imgs/Coralia_red_black.png" alt="Coralia Logo" class="coralia-logo-footer">
         </div>
@@ -59,7 +58,7 @@ footer.main-footer > div.footer-content {
         <div>
             <p>&copy; #currentYear# Sydänsairaala Oy & Cinia Oy.<br /><br />Kaikki oikeudet pidätetään.</p>
         </div>
-    </div>
+    
 
 
 </footer>

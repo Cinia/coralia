@@ -1,0 +1,42 @@
+div.flipper {
+    display: inline-block;
+    position: relative;
+
+    transition: all 0.2s ease-in-out;
+
+    width: 100%;
+    height: 100%;
+    
+    & > .sidea {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        /* display: block; */
+
+        transform: scalex(1);
+    }
+
+    & > .sideb {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        /* display: none; */
+        transform: scalex(0);
+    }
+
+    &:hover {
+        & > .sidea {
+            /* display: none; */
+            transform: scalex(0);
+        }
+
+        & > .sideb {
+            /* display: block; */
+            transform: scalex(1);
+        }
+    }
+}
